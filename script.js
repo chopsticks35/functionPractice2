@@ -1,11 +1,9 @@
-//var getName = function(object){
-//   return object.name;
+//var getName = function(obj){
+//   return obj.name;
 //}
-//
-////console.assert(getName({ name: 'Luisa', age: 25 }))
-//
+
 //var totalLetters = function(wordString){
-//    var counter = 0;
+//    var counter = 0
 //    var i;
 //    for (i=0; i<wordString.length; i++){
 //        counter += wordString[i].length;
@@ -15,13 +13,91 @@
 //}
 
 //var keyValue = function(key, value){
-//    var objecy = {};
+//    var obj = {};
 //    object[key] = value;
-//    return object;
+//    return obj;
 //    
 //}
 
-var negativeIndex = function(circArray, negNum){
-    return circArray[circArray.length + negNum];
-}
+//var negativeIndex = function(circArray, negNum){
+//    return circArray[circArray.length + negNum];
+//}
+//
+//var removeM = function(wordString){
+//    var results = '';
+//    var i;
+//    for(i=0; i<wordString.length; i++){
+//        if (wordString[i] != 'm' || wordString[i] != 'M' ){
+//            results = results + wordString[i]
+//        }
+//        return results;
+//}
 
+//var printObject = function(obj){
+//    for (key in obj){
+//    document.write(key + ' is ' + obj[key] + '\n')
+//  }
+//}
+//printObject({ a: 10, b: 20, c: 30 });
+//printObject({ firstName: 'pork', lastName: 'chops' });
+
+//    var vowels = function(wordString){
+//    var results = [];
+//    var i;
+//    var vowelList = {
+//        
+//        'a': true,
+//        'e': true,
+//        'i': true,
+//        'o': true,
+//        'u': true
+//        };
+//
+//    for (i=0; i<wordString.length; i++){
+//        if (wordString[i] in vowelList){
+//            results.push[i];
+//        } 
+//        return results;
+//    }
+//
+
+//var twins = function(letterArray){
+//    
+//    if (letterArray.length % 2 === 1){
+//        return false;
+//    }
+//    else {
+//        var i;
+//        for(i=0; i<letterArray.length; i+=2){
+//            if (letterArray[i] != letterArray[i+1]){
+//                return false;
+//                }
+//            }
+//        }
+//    return true;
+//};
+//
+//
+//console.log(twins(['a', 'a', 'b', 'b', 'c', 'c']));
+//console.log(twins(['a', 'a', 'b', 'c', 'd', 'd']));
+//console.log(twins(['a', 'a', 'b', 'z']));
+//console.log(twins(['a', 'a', undefined]));
+
+var or = function(trueArray){
+    var i;
+    for (i=0; i<trueArray.length; i++){
+        if (trueArray[i]=='true'){
+            return true;
+        }
+    }
+    return false;
+};
+
+console.log(or([false, true]));
+
+
+    
+
+
+    
+    
