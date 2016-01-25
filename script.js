@@ -83,21 +83,29 @@
 //console.log(twins(['a', 'a', 'b', 'z']));
 //console.log(twins(['a', 'a', undefined]));
 
-var or = function(trueArray){
+//var or = function(trueArray){
+//    var i;
+//    for (i=0; i<trueArray.length; i++){
+//        if (trueArray[i]==true){
+//            return true;
+//        }
+//    }
+//    return false;
+//};
+//
+//console.log(or([]));
+
+var unique = function(stringArray){
+    var results = [];
     var i;
-    for (i=0; i<trueArray.length; i++){
-        if (trueArray[i]=='true'){
-            return true;
-        }
+    for (i=0; i<stringArray.length; i++){
+       if(results.indexOf(stringArray[i])==-1){
+			results.push(stringArray[i]);
+    }  
+    return results;
     }
-    return false;
-};
+}
 
-console.log(or([false, true]));
-
-
-    
-
-
+console.log(unique(['a', 'b', 'a', 'c', 'd', 'd']));
     
     
